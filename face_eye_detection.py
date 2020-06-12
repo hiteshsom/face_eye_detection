@@ -6,9 +6,7 @@ import cv2
 import numpy as np 
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 left_eye_cascade = cv2.CascadeClassifier('haarcascade_lefteye_2splits.xml')
-right_eye_cascade = cv2.CascadeClassifier('haarcascade_righteye_2splits.xml')
 
 cap = cv2.VideoCapture(0)
 
@@ -39,8 +37,4 @@ while True:
         break
 
 cap.release()
-<<<<<<< HEAD
 cv2.destroyAllWindows()
-=======
-cv2.destroyAllWindows()
->>>>>>> 6bde23bd1b9bdacee3257d2359f36ebf825a7739
